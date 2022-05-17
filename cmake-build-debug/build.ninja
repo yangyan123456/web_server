@@ -72,23 +72,35 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_web_server: phony || CMakeFiles/web_server.dir
 
-build CMakeFiles/web_server.dir/Processe/setitimer.cpp.o: CXX_COMPILER__web_server_Debug /home/yyq/CLionProjects/web_server/Processe/setitimer.cpp || cmake_object_order_depends_target_web_server
-  DEP_FILE = CMakeFiles/web_server.dir/Processe/setitimer.cpp.o.d
+build CMakeFiles/web_server.dir/Thread/setitimer.cpp.o: CXX_COMPILER__web_server_Debug /home/yyq/CLionProjects/web_server/Thread/setitimer.cpp || cmake_object_order_depends_target_web_server
+  DEP_FILE = CMakeFiles/web_server.dir/Thread/setitimer.cpp.o.d
   FLAGS = -pthread -g -std=gnu++14
   OBJECT_DIR = CMakeFiles/web_server.dir
-  OBJECT_FILE_DIR = CMakeFiles/web_server.dir/Processe
+  OBJECT_FILE_DIR = CMakeFiles/web_server.dir/Thread
 
-build CMakeFiles/web_server.dir/Processe/timer.cpp.o: CXX_COMPILER__web_server_Debug /home/yyq/CLionProjects/web_server/Processe/timer.cpp || cmake_object_order_depends_target_web_server
-  DEP_FILE = CMakeFiles/web_server.dir/Processe/timer.cpp.o.d
+build CMakeFiles/web_server.dir/Thread/timer.cpp.o: CXX_COMPILER__web_server_Debug /home/yyq/CLionProjects/web_server/Thread/timer.cpp || cmake_object_order_depends_target_web_server
+  DEP_FILE = CMakeFiles/web_server.dir/Thread/timer.cpp.o.d
   FLAGS = -pthread -g -std=gnu++14
   OBJECT_DIR = CMakeFiles/web_server.dir
-  OBJECT_FILE_DIR = CMakeFiles/web_server.dir/Processe
+  OBJECT_FILE_DIR = CMakeFiles/web_server.dir/Thread
 
-build CMakeFiles/web_server.dir/Processe/stdthread.cpp.o: CXX_COMPILER__web_server_Debug /home/yyq/CLionProjects/web_server/Processe/stdthread.cpp || cmake_object_order_depends_target_web_server
-  DEP_FILE = CMakeFiles/web_server.dir/Processe/stdthread.cpp.o.d
+build CMakeFiles/web_server.dir/Thread/stdthread.cpp.o: CXX_COMPILER__web_server_Debug /home/yyq/CLionProjects/web_server/Thread/stdthread.cpp || cmake_object_order_depends_target_web_server
+  DEP_FILE = CMakeFiles/web_server.dir/Thread/stdthread.cpp.o.d
   FLAGS = -pthread -g -std=gnu++14
   OBJECT_DIR = CMakeFiles/web_server.dir
-  OBJECT_FILE_DIR = CMakeFiles/web_server.dir/Processe
+  OBJECT_FILE_DIR = CMakeFiles/web_server.dir/Thread
+
+build CMakeFiles/web_server.dir/Thread/pthread_condition.cpp.o: CXX_COMPILER__web_server_Debug /home/yyq/CLionProjects/web_server/Thread/pthread_condition.cpp || cmake_object_order_depends_target_web_server
+  DEP_FILE = CMakeFiles/web_server.dir/Thread/pthread_condition.cpp.o.d
+  FLAGS = -pthread -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/web_server.dir
+  OBJECT_FILE_DIR = CMakeFiles/web_server.dir/Thread
+
+build CMakeFiles/web_server.dir/Thread/semaphore.cpp.o: CXX_COMPILER__web_server_Debug /home/yyq/CLionProjects/web_server/Thread/semaphore.cpp || cmake_object_order_depends_target_web_server
+  DEP_FILE = CMakeFiles/web_server.dir/Thread/semaphore.cpp.o.d
+  FLAGS = -pthread -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/web_server.dir
+  OBJECT_FILE_DIR = CMakeFiles/web_server.dir/Thread
 
 
 # =============================================================================
@@ -98,7 +110,7 @@ build CMakeFiles/web_server.dir/Processe/stdthread.cpp.o: CXX_COMPILER__web_serv
 #############################################
 # Link the executable web_server
 
-build web_server: CXX_EXECUTABLE_LINKER__web_server_Debug CMakeFiles/web_server.dir/Processe/setitimer.cpp.o CMakeFiles/web_server.dir/Processe/timer.cpp.o CMakeFiles/web_server.dir/Processe/stdthread.cpp.o
+build web_server: CXX_EXECUTABLE_LINKER__web_server_Debug CMakeFiles/web_server.dir/Thread/setitimer.cpp.o CMakeFiles/web_server.dir/Thread/timer.cpp.o CMakeFiles/web_server.dir/Thread/stdthread.cpp.o CMakeFiles/web_server.dir/Thread/pthread_condition.cpp.o CMakeFiles/web_server.dir/Thread/semaphore.cpp.o
   FLAGS = -pthread -g
   OBJECT_DIR = CMakeFiles/web_server.dir
   POST_BUILD = :
