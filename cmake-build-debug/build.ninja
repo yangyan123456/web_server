@@ -102,6 +102,24 @@ build CMakeFiles/web_server.dir/Thread/semaphore.cpp.o: CXX_COMPILER__web_server
   OBJECT_DIR = CMakeFiles/web_server.dir
   OBJECT_FILE_DIR = CMakeFiles/web_server.dir/Thread
 
+build CMakeFiles/web_server.dir/net/select.cpp.o: CXX_COMPILER__web_server_Debug /home/yyq/CLionProjects/web_server/net/select.cpp || cmake_object_order_depends_target_web_server
+  DEP_FILE = CMakeFiles/web_server.dir/net/select.cpp.o.d
+  FLAGS = -pthread -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/web_server.dir
+  OBJECT_FILE_DIR = CMakeFiles/web_server.dir/net
+
+build CMakeFiles/web_server.dir/net/netAPI.cpp.o: CXX_COMPILER__web_server_Debug /home/yyq/CLionProjects/web_server/net/netAPI.cpp || cmake_object_order_depends_target_web_server
+  DEP_FILE = CMakeFiles/web_server.dir/net/netAPI.cpp.o.d
+  FLAGS = -pthread -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/web_server.dir
+  OBJECT_FILE_DIR = CMakeFiles/web_server.dir/net
+
+build CMakeFiles/web_server.dir/net/server.cpp.o: CXX_COMPILER__web_server_Debug /home/yyq/CLionProjects/web_server/net/server.cpp || cmake_object_order_depends_target_web_server
+  DEP_FILE = CMakeFiles/web_server.dir/net/server.cpp.o.d
+  FLAGS = -pthread -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/web_server.dir
+  OBJECT_FILE_DIR = CMakeFiles/web_server.dir/net
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target web_server
@@ -110,7 +128,7 @@ build CMakeFiles/web_server.dir/Thread/semaphore.cpp.o: CXX_COMPILER__web_server
 #############################################
 # Link the executable web_server
 
-build web_server: CXX_EXECUTABLE_LINKER__web_server_Debug CMakeFiles/web_server.dir/Thread/setitimer.cpp.o CMakeFiles/web_server.dir/Thread/timer.cpp.o CMakeFiles/web_server.dir/Thread/stdthread.cpp.o CMakeFiles/web_server.dir/Thread/pthread_condition.cpp.o CMakeFiles/web_server.dir/Thread/semaphore.cpp.o
+build web_server: CXX_EXECUTABLE_LINKER__web_server_Debug CMakeFiles/web_server.dir/Thread/setitimer.cpp.o CMakeFiles/web_server.dir/Thread/timer.cpp.o CMakeFiles/web_server.dir/Thread/stdthread.cpp.o CMakeFiles/web_server.dir/Thread/pthread_condition.cpp.o CMakeFiles/web_server.dir/Thread/semaphore.cpp.o CMakeFiles/web_server.dir/net/select.cpp.o CMakeFiles/web_server.dir/net/netAPI.cpp.o CMakeFiles/web_server.dir/net/server.cpp.o
   FLAGS = -pthread -g
   OBJECT_DIR = CMakeFiles/web_server.dir
   POST_BUILD = :

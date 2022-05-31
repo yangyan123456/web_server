@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS -pthread)
 
 
-add_executable(web_server Thread/setitimer.cpp Thread/timer.cpp Thread/stdthread.cpp Thread/pthread_condition.cpp Thread/semaphore.cpp)
+add_executable(web_server Thread/setitimer.cpp Thread/timer.cpp Thread/stdthread.cpp Thread/pthread_condition.cpp Thread/semaphore.cpp net/select.cpp net/netAPI.cpp net/server.cpp)
